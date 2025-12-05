@@ -2,10 +2,8 @@
 local Players = game:GetService("Players")
 local MarketplaceService = game:GetService("MarketplaceService")
 
--- URL onde seu Main.lua está hospedado (corrigido)
 local url = "https://raw.githubusercontent.com/Zyppiir/Zyppiir-Hub/main/main.lua"
 
--- Função para timestamp formatado
 local function getTimestamp()
     local t = os.date("*t")
     return string.format("[%02d:%02d:%02d]", t.hour, t.min, t.sec)
@@ -15,14 +13,13 @@ local function log(msg)
     print(getTimestamp() .. " [ZYPPIIR LOADER v0.0.1] " .. msg)
 end
 
--- Informações do jogo
 local placeId = game.PlaceId
 local gameName = MarketplaceService:GetProductInfo(placeId).Name
 
 log("Current Place ID: " .. placeId)
 log("Game Detected: " .. gameName)
-
 log("Carregando script em 2 segundos...")
+
 task.wait(2)
 
 log("Carregando script...")
