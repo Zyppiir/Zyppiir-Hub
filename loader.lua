@@ -2,8 +2,8 @@
 local Players = game:GetService("Players")
 local MarketplaceService = game:GetService("MarketplaceService")
 
--- URL onde seu Main.lua está hospedado
-local url = "https://seu-servidor.com/ZyppiirHub/Main.lua"
+-- URL onde seu Main.lua está hospedado (corrigido)
+local url = "https://raw.githubusercontent.com/Zyppiir/Zyppiir-Hub/main/main.lua"
 
 -- Função para timestamp formatado
 local function getTimestamp()
